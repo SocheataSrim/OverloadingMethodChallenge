@@ -5,18 +5,7 @@ public class Main {
     }
     public static String getDurationString(int seconds){
         int minutes = seconds /60;
-        int hour = minutes /60;
-        System.out.println("hour= " + hour);
-
-        int remainingMinutes = minutes % 60;
-        System.out.println ("minutes =" + minutes);
-        System.out.println("remaining minutes=" + remainingMinutes);
-
-        int remainingSecond = seconds % 60;
-        System.out.println ("second=" + seconds);
-        System.out.println ("remaining second =" + remainingSecond);
-
-        return hour + "h"+ remainingMinutes + "m" + remainingSecond + "s";
+        return (getDurationString(minutes, seconds));
     }
 
     public static String getDurationString(int minutes, int seconds){
